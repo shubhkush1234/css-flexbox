@@ -63,7 +63,7 @@ Flex COntainer Properties
 1. Display property
 ```javaScript
 <body>
-      <div class='container'>
+    <div class='container'>
         <div class="flex-item item-1">Item 1 </div>
         <div class="flex-item item-2">Item 2 </div>
         <div class="flex-item item-3">Item 3 </div>
@@ -73,53 +73,25 @@ Flex COntainer Properties
         <div class="flex-item item-7">Item 7 </div>
         <div class="flex-item item-8">Item 8 </div>
         <div class="flex-item item-9">Item 9 </div>
-      </div>
-    <style>
-      body {
-      margin: 0;
-      }
-      .container {
-      border: 6px solid black;
-      display: inline-flex;
-      flex-wrap: wrap;
-      }
-      .flex-item {
-      color: white;
-      font-size: 1.5rem;
-      padding: 1 rem;
-      text-align: center;
-      }
-      .item-1 {
-      background-color: yellowgreen;
-      }
-      .item-2 {
-      background-color: red;
-      }
-      .item-3 {
-      background-color: green;
-      }
-      .item-4 {
-      background-color: pink;
-      }
-      .item-5 {
-      background-color: orange;
-      }
-      .item-6 {
-      background-color: peachpuff;
-      }
-      .item-7 {
-      background-color: black;
-      }
-      .item-8 {
-      background-color: brown;
-      }
-      .item-9 {
-      background-color: magenta;
-      }
-    </style>
-    <script src="app.js"></script>
+    </div>
 </body>
+<styles>
 
+body {
+    margin: 0;
+}
+.container {
+    border: 6px solid black;
+}
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1 rem;
+    text-align: center;
+}
+.item-1 {
+    background
+}
 
 
 ```
@@ -165,6 +137,44 @@ Default value of flex-wrap is nowrap.
     display: flex;
     flex-wrap: wrap;
 }
+
 ```
 
- 
+Similar to horizontal wrapping, vertical wrapping is also possible. Change the flex-direction to column and add a height to the flex container.
+By default, the value of flex-direction is row. flex-direction: row.
+```javaScript
+.container{
+    border: 6px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-height: 400px;
+    flex-wrap: wrap;
+}
+
+```
+Column will be created to right and items are placed in that column.
+Try changing the value to flex-wrap: wrap-reverse.
+
+4. flex-flow
+
+It is a shorthand for the flex-direction and flex-wrap.
+
+flex-flow: <flex-direction><flex-wrap>
+
+
+1st : flex direction
+2nd : flex wrap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
